@@ -1,0 +1,38 @@
+<div class="container">
+    <h2>Adams Todo List</h2>
+    <div class="inside-container">
+        <form [formGroup] ="userInput" class="form-inline" (ngSubmit) = add() >
+            <div class="form-group mx-sm-3 mb-2">
+              <input type="text" class="form-control" id="todo" placeholder="Enter todo List" formControlName ="todoList">
+            </div>
+            <button type="submit" class="btn btn-primary mb-2" [disabled] ="!userInput.valid">Add</button>
+            <!-- <div class="task">
+              <div class="form-check" id="items" *ngFor = "let items of activity">
+                  <input class="form-check-input" type="checkbox" value="" formControlName ="itemSelect" id="flexCheckDefault" >
+                  <label class="form-check-label" for="flexCheckDefault">
+                   {{items}}
+                  </label>
+                </div> 
+          </div> -->
+          </form>
+          <div class="task">
+            <div class="form-check" id="items" *ngFor = "let items of activity">
+                <!-- <input #checker (change) = "change(checker.checked)" class ="form-check-input" type="checkbox" id="flexCheckDefault" > -->
+                <input #checker class ="form-check-input" type="checkbox" id="flexCheckDefault" (change) = "change( items, $event.target.checked )" >
+                <label class="form-check-label" for="flexCheckDefault">
+                 {{items}}
+                </label>
+              </div> 
+        </div>
+
+    </div>
+   
+       
+
+   
+   <div class="buttons">
+    <button type="button" class="btn btn-primary" id="btn1"  >Remove Completed</button>
+    <button type="button" class="btn btn-primary" id="btn1" (click)= remove()>Remove All Tasks</button>
+   </div>
+</div>
+

@@ -1,0 +1,79 @@
+.form-control{
+    width: 400px;
+}
+
+.container{
+    margin: 50px auto 0px 250px;
+    border: 2px solid #00adb5;
+    width: 850px;
+    background-color: #aad8d3;
+
+   
+}
+
+.inside-container{
+    /* border: 1px solid #00adb5; */
+    width: 88%;
+    margin: 10px auto;
+    padding: 50px;
+    background-color:#f4eee8;
+}
+
+h2{
+    margin: 10px 0px 0px 150px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#btn1{
+    margin: 10px 0px 10px 40px;
+}
+
+.buttons{
+    display: flex;
+    column-gap: 390px;
+}
+
+.task{
+    width: 100%;
+    border: 2px solid #00adb5;
+    margin: 50px 10px 10px 0px;
+    padding: 10px;
+    /* background-color: #fcecdd; */
+
+
+}
+
+#items{
+    border: 1px dotted #00adb5;
+    height: 10vh;
+    margin-bottom: 20px;
+    /* padding: 3px; */
+    
+    
+}
+
+
+.form-check-label
+{
+ font-size: 22px;
+ padding: 10px 0px 0px 20px;
+ position: absolute;
+ left: 85px;
+ 
+
+}
+
+.form-check-input{
+    height: 3vw;
+    width: 10vw;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+ 
+    
+}
+
+.form-check:hover{
+    background-color: #aad8d3;
+    cursor: pointer;
+}
